@@ -18,7 +18,9 @@ public class ObjectSpawner : MonoBehaviour
 
         while (true)
         {
-            Instantiate(fallingObjectPrefab, GetSpawnPosition(), Quaternion.identity);
+            GameObject go = Instantiate(fallingObjectPrefab, GetSpawnPosition(), Quaternion.identity);
+            go.GetComponent<FallingObjectScript>().Initialize();
+
             yield return new WaitForSeconds(1.0f);
         }
     }

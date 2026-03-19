@@ -300,6 +300,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayertController
   moveForce: 5
   maxSpeed: 5
+  scoreText: {fileID: 736617923}
   score: 0
 --- !u!1 &221861718
 GameObject:

@@ -169,3 +169,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad0ff04d3266b30459268dfccae57002, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FallingObjectScript
+  pointRange: {x: 1, y: 5}

@@ -8,9 +8,10 @@ public class FallingObjectScript : MonoBehaviour
 
     public void Initialize()
     {
+        
         points = Random.Range(pointRange.x, pointRange.y);
 
-        gameObject.GetComponent<SpriteRenderer>().color = Random.ColorHSV();
+        gameObject.GetComponent<SpriteRenderer>().color = Color.green;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

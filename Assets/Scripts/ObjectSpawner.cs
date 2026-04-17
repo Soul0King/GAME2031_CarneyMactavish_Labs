@@ -4,6 +4,7 @@ using UnityEngine;
 public class ObjectSpawner : MonoBehaviour
 {
     [SerializeField] private GameObject fallingObjectPrefab;
+    [SerializeField] private GameObject fallingObjectHazard;
     [SerializeField] private float ySpawnPosition;
     [SerializeField] private Vector2 xSpawnRange;
 
@@ -11,6 +12,7 @@ public class ObjectSpawner : MonoBehaviour
     void Start()
     {
         StartCoroutine(SpawnFallingObjects());
+        StartCoroutine(SpawnFallingHazards());
     }
 
     private IEnumerator SpawnFallingObjects()
@@ -22,6 +24,18 @@ public class ObjectSpawner : MonoBehaviour
             go.GetComponent<FallingObjectScript>().Initialize();
 
             yield return new WaitForSeconds(1.0f);
+        }
+
+        
+    }
+    private IEnumerator SpawnFallingHazards()
+    {
+
+        while (true)
+        {
+            GameObject go = Instantiate(fallingObjectHazard, GetSpawnPosition(), Quaternion.identity);
+
+            yield return new WaitForSeconds(2.5f);
         }
     }
 

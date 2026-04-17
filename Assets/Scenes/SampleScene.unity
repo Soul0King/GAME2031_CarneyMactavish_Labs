@@ -1667,6 +1667,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjectSpawner
   fallingObjectPrefab: {fileID: 3603264713350381622, guid: 5bfc6f15253c29446acbbd209e046aeb, type: 3}
+  fallingObjectHazard: {fileID: 3603264713350381622, guid: b401625f373cf524eb80cc04257a7720, type: 3}
   ySpawnPosition: 6
   xSpawnRange: {x: -6, y: 6}
 --- !u!4 &1926022772
